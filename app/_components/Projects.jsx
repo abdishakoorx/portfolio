@@ -43,7 +43,7 @@ const Projects = () => {
             <Card key={index} className="flex flex-col h-full bg-transparent">
               <CardHeader>
                 <CardTitle>{project.title}</CardTitle>
-                <CardDescription>{project.description}</CardDescription>
+                <CardDescription className='text-gray-700'>{project.description}</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
                 <Image
