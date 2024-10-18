@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
     return (
-        <div className="relative w-full overflow-hidden min-h-96">
+        <div className="relative w-full min-h-full overflow-hidden">
             {/* Grid background */}
             <div
                 className="absolute inset-0"
@@ -32,7 +32,7 @@ function About() {
                                 Abdishakoor Hassan
                             </span>.
                         </h1>
-                        <h2 className='max-w-4xl text-xl tracking-wide text-gray-600'>I am a Software Developer specializing in full-stack web development with a passion for creating efficient, scalable, and user-friendly applications.</h2>
+                        <h2 className='max-w-4xl text-lg tracking-wide text-gray-600 md:text-xl '>I am a Software Developer specializing in full-stack web development with a passion for creating efficient, scalable, and user-friendly applications.</h2>
                     </div>
                 </div>
                 

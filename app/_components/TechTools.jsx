@@ -19,14 +19,14 @@ function TechTools() {
             name: 'Python',
             imgSrc: '/Python.png',
         },
-        {
-            name: 'Flutter',
-            imgSrc: '/Flutter.png',
-        },
-        {
-            name: 'Node.js',
-            imgSrc: '/Node.js.png',
-        },
+        // {
+        //     name: 'Flutter',
+        //     imgSrc: '/Flutter.png',
+        // },
+        // {
+        //     name: 'Node.js',
+        //     imgSrc: '/Node.js.png',
+        // },
         // {
         //     name: 'Google Cloud',
         //     imgSrc: '/Google Cloud.png',
@@ -39,43 +39,43 @@ function TechTools() {
             name: 'Java',
             imgSrc: '/Java.png',
         },
-        {
-            name: 'MongoDB',
-            imgSrc: '/MongoDB.png',
-        },
+        // {
+        //     name: 'MongoDB',
+        //     imgSrc: '/MongoDB.png',
+        // },
         {
             name: 'Next.js',
             imgSrc: '/Next.js.png',
         },
-        {
-            name: 'Go',
-            imgSrc: '/Go.png',
-        },
+        // {
+        //     name: 'Go',
+        //     imgSrc: '/Go.png',
+        // },
         {
             name: 'PostgreSQL',
             imgSrc: '/PostgresSQL.png',
         },
-        {
-            name: 'Django',
-            imgSrc: '/Django.png',
-        },
-        {
-            name: 'TypeScript',
-            imgSrc: '/TypeScript.png',
-        },
+        // {
+        //     name: 'Django',
+        //     imgSrc: '/Django.png',
+        // },
+        // {
+        //     name: 'TypeScript',
+        //     imgSrc: '/TypeScript.png',
+        // },
     ];
 
     return (
-        <div className="w-full py-4">
+        <div className="w-full py-8">
             <div className="flex items-center justify-center max-w-5xl px-4 mx-auto">
                 {/* <h2 className="mb-12 text-3xl font-bold text-center ">
                     Tech Stack & Tools
                 </h2> */}
-                <div className="grid items-center max-w-2xl grid-cols-2 gap-8 justify-items-center md:grid-cols-3 lg:grid-cols-6">
+                <div className="grid items-center max-w-2xl grid-cols-3 gap-8 justify-items-center lg:grid-cols-6">
                     {techStack.map((tech, index) => (
                         <div
                             key={index}
-                            className="flex flex-col items-center justify-center p-2 transition-colors duration-200 rounded-lg"
+                            className="flex flex-col items-center justify-center p-6 transition-colors duration-200 rounded-lg"
                         >
                             <div className="relative flex items-center justify-center w-16 h-16 max-w-2xl">
                                 <Image

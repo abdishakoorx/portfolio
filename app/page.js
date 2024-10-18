@@ -6,12 +6,22 @@ import TechTools from "./_components/TechTools";
 
 export default function Home() {
   return (
-    <div className="px-10">
-      <Header/>
-      <About/>
-      <TechTools/>
-      <Projects/>
-      <Footer/>
-    </div>
+    <main>
+      <Header />
+      <div className="px-10 pt-24 space-y-20">
+        <section id="about">
+          <About />
+          <TechTools />
+        </section>
+        
+        <section id="projects">
+          <Projects />
+        </section>
+        
+        <section id="contact">
+          <Footer />
+        </section>
+      </div>
+    </main>
   );
 }
