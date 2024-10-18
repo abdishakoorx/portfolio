@@ -45,7 +45,7 @@ function Header() {
                         className='rounded-full h-[36px] w-[36px] object-cover' 
                     />
                     <div>
-                        <h1 className="text-2xl font-bold text-blue-400">
+                        <h1 className="text-2xl font-bold text-gray-700">
                             Abdishakoor
                         </h1>
                     </div>
