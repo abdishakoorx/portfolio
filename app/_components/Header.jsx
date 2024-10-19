@@ -58,8 +58,7 @@ function Header() {
                                     onClick={() => scrollToSection(section)}
                                     className={`
                                         relative px-3 py-2 text-lg capitalize transition-colors
-                                        hover:text-purple-700
-                                        ${activeSection === section ? 'text-purple-700' : 'text-gray-800'}
+                                        ${activeSection === section ? 'text-blue-700' : 'text-gray-800'}
                                     `}
                                 >
                                     {section}

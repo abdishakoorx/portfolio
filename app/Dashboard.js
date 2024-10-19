@@ -1,58 +1,66 @@
 'use client'
-
-import { motion } from 'framer-motion'
+import { motion, useScroll } from 'framer-motion'
 import About from "./_components/About"
 import Footer from "./_components/Footer"
 import Header from "./_components/Header"
 import Projects from "./_components/Projects"
 import TechTools from "./_components/TechTools"
 
-// Smooth fade-in and upward motion
 const fadeInUp = {
-  initial: { opacity: 0, y: 30 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.8, ease: 'easeInOut' } // Adjusted for smoother effect
-}
-
-// Stagger children animations for better flow
-const staggerChildren = {
-  animate: {
+  initial: { 
+    opacity: 0, 
+    y: 20 
+  },
+  animate: { 
+    opacity: 1, 
+    y: 0,
     transition: {
-      staggerChildren: 0.4, // Longer stagger for smoother effect
-      ease: 'easeInOut'
+      duration: 0.6,
+      ease: "easeOut"
     }
   }
 }
 
-// Smoothly fade in the entire main container
-const fadeContainer = {
-  initial: { opacity: 0 },
-  animate: { opacity: 1 },
-  transition: { duration: 1, ease: 'easeInOut' } // Container-level smoothness
+const staggerContainer = {
+  initial: {},
+  animate: {
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.3
+    }
+  }
 }
 
 export default function Dashboard() {
+  const { scrollYProgress } = useScroll()
+
   return (
     <motion.main
       initial="initial"
       animate="animate"
-      variants={fadeContainer} // Smooth entry for the whole container
+      variants={staggerContainer}
     >
       <Header />
       <div className="px-10 pt-24 space-y-20">
-        {/* About and TechTools section */}
-        <motion.section id="about" variants={fadeInUp}>
+        <motion.section 
+          id="about" 
+          variants={fadeInUp}
+        >
           <About />
           <TechTools />
         </motion.section>
-        
-        {/* Projects section */}
-        <motion.section id="projects" variants={fadeInUp}>
+       
+        <motion.section 
+          id="projects" 
+          variants={fadeInUp}
+        >
           <Projects />
         </motion.section>
-        
-        {/* Footer section */}
-        <motion.section id="contact" variants={fadeInUp}>
+       
+        <motion.section 
+          id="contact" 
+          variants={fadeInUp}
+        >
           <Footer />
         </motion.section>
       </div>
