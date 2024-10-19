@@ -12,16 +12,16 @@ const Footer = () => {
     >
       <div className="max-w-6xl px-4 mx-auto">
         <div className="flex flex-col items-center justify-center gap-12 sm:flex-row">
-          <nav className="flex items-center space-x-3" aria-label="Social media and contact links">
+          <nav className="flex items-center gap-16" aria-label="Social media and contact links">
             <Button 
               variant="ghost" 
               className="flex items-center justify-center h-10 gap-2 px-4 hover:border-2 hover:border-gray-700" 
               asChild
             >
               <a
-                href="mailto:abdishakoor145@example.com"
+                href="mailto:abdishakoor145@gmail.com"
                 className="flex items-center transition-colors hover:text-gray-900"
-                aria-label="Send email to abdishakoor145@example.com"
+                aria-label="Send email to abdishakoor145@gmail.com"
               >
                 <Mail className="w-4 h-4" aria-hidden="true" />
                 <span>Email</span>
