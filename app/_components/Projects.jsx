@@ -29,10 +29,18 @@ const projects = [
   {
     title: "Food Scoring System",
     description: "Choose your food, submit them, and receive a score with feedback.",
-    technologies: ["React", "NodeJs", "Python", "GraphQL"],
+    technologies: ["React", "NodeJs", "Python", "TailwindCSS", "GraphQL"],
     githubUrl: "https://github.com/abdishakoorx/whiteplates",
     liveUrl: "https://whiteplates.vercel.app/",
     imageUrl: "/whiteplates.png"
+  },
+  {
+    title: "AI Travel Planner",
+    description: "AI-Powered Travel Planning, Tailored Just for You",
+    technologies: ["React", "NodeJs", "Vite", "Tailwind CSS"],
+    githubUrl: "https://github.com/abdishakoorx/trip_planner",
+    liveUrl: "https://greatertrips.vercel.app/",
+    imageUrl: "/greatertrips.png"
   },
 ]
 
