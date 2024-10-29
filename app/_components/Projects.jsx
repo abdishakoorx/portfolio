@@ -11,20 +11,28 @@ import { GitHubLogoIcon } from '@radix-ui/react-icons'
 
 const projects = [
   {
-    title: "Property Management System",
-    description: "A full-stack property management solution for landlords and agents.",
-    technologies: ["React", "Node.js", "NextJs", "Supabase"],
-    githubUrl: "https://github.com/abdishakoorx/primestate",
-    liveUrl: "https://primestate-eta.vercel.app/",
-    imageUrl: "/primestate.png"
-  },
-  {
     title: "Doctor Appointment System",
     description: "A web app for managing doctor appointments, with a seamless user experience.",
-    technologies: ["NextJs", "Hygraph CMS", "TailwindCSS", "GraphQL"],
+    technologies: ["NextJs", "Hygraph CMS", "TailwindCSS", "GraphQL", "Kinde"],
     githubUrl: "https://github.com/abdishakoorx/doctor_appoinment",
     liveUrl: "https://doctorwhere.vercel.app/",
     imageUrl: "/doctorwhere.png"
+  },
+  {
+    title: "AI Travel Planner",
+    description: "Plan your dream trips instantly with AI and get personalized itineraries and smart recommendations.",
+    technologies: ["React", "NodeJs", "Vite", "Tailwind CSS"],
+    githubUrl: "https://github.com/abdishakoorx/trip_planner",
+    liveUrl: "https://greatertrips.vercel.app/",
+    imageUrl: "/greatertrips.png"
+  },
+  {
+    title: "Property Management System",
+    description: "A full-stack property management solution for landlords and agents.",
+    technologies: ["React", "Node.js", "NextJs", "Supabase", "Clerk"],
+    githubUrl: "https://github.com/abdishakoorx/primestate",
+    liveUrl: "https://primestate-eta.vercel.app/",
+    imageUrl: "/primestate.png"
   },
   {
     title: "Food Scoring System",
@@ -33,14 +41,6 @@ const projects = [
     githubUrl: "https://github.com/abdishakoorx/whiteplates",
     liveUrl: "https://whiteplates.vercel.app/",
     imageUrl: "/whiteplates.png"
-  },
-  {
-    title: "AI Travel Planner",
-    description: "AI-Powered Travel Planning, Tailored Just for You",
-    technologies: ["React", "NodeJs", "Vite", "Tailwind CSS"],
-    githubUrl: "https://github.com/abdishakoorx/trip_planner",
-    liveUrl: "https://greatertrips.vercel.app/",
-    imageUrl: "/greatertrips.png"
   },
 ]
 
