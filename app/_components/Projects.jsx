@@ -34,14 +34,14 @@ const projects = [
     liveUrl: "https://primestate-eta.vercel.app/",
     imageUrl: "/primestate.png"
   },
-  {
-    title: "Food Scoring System",
-    description: "Choose your food, submit them, and receive a score with feedback.",
-    technologies: ["React", "NodeJs", "Python", "TailwindCSS", "GraphQL"],
-    githubUrl: "https://github.com/abdishakoorx/whiteplates",
-    liveUrl: "https://whiteplates.vercel.app/",
-    imageUrl: "/whiteplates.png"
-  },
+  // {
+  //   title: "Food Scoring System",
+  //   description: "Choose your food, submit them, and receive a score with feedback.",
+  //   technologies: ["React", "NodeJs", "Python", "TailwindCSS", "GraphQL"],
+  //   githubUrl: "https://github.com/abdishakoorx/whiteplates",
+  //   liveUrl: "https://whiteplates.vercel.app/",
+  //   imageUrl: "/whiteplates.png"
+  // },
 ]
 
 const ProjectCard = ({ project, index }) => {
