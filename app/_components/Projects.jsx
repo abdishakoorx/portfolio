@@ -20,8 +20,8 @@ const projects = [
   },
   {
     title: "AI Travel Planner",
-    description: "Plan your dream trips instantly with AI and get personalized itineraries and smart recommendations.",
-    technologies: ["React", "NodeJs", "Vite", "Tailwind CSS"],
+    description: "A web app with AI that generates smart recommendations for trips.",
+    technologies: ["React", "NodeJs", "Gemini AI", "Vite", "Tailwind CSS"],
     githubUrl: "https://github.com/abdishakoorx/trip_planner",
     liveUrl: "https://greatertrips.vercel.app/",
     imageUrl: "/greatertrips.png"
