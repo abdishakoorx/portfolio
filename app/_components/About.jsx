@@ -3,7 +3,7 @@ import React from 'react'
 
 function About() {
     return (
-        <div className="relative w-full min-h-full overflow-hidden">
+        <div className="overflow-hidden relative w-full min-h-full">
             {/* Grid background */}
             <div
                 className="absolute inset-0"
@@ -23,14 +23,14 @@ function About() {
                 }}
             />
             {/* Content area */}
-            <main className="relative z-10 flex items-center justify-center h-full pt-16">
-                <div className='flex items-center justify-center'>
-                    <div className='flex flex-col items-center justify-center max-w-4xl mx-auto space-y-8 text-center'>
-                        <div className='flex flex-wrap justify-center gap-3'>
-                            <Badge className="text-gray-50 bg-teal-600 hover:bg-teal-600 text-sm">
+            <main className="flex relative z-10 justify-center items-center pt-16 h-full">
+                <div className='flex justify-center items-center'>
+                    <div className='flex flex-col justify-center items-center mx-auto space-y-8 max-w-4xl text-center'>
+                        <div className='flex flex-wrap gap-3 justify-center'>
+                            <Badge className="text-sm text-gray-50 bg-teal-700 hover:bg-teal-600">
                                 Full Stack Developer
                             </Badge>
-                            <Badge className="text-white bg-teal-600 hover:bg-teal-600 text-sm">
+                            <Badge className="text-sm text-white bg-teal-700 hover:bg-teal-600">
                                 Software Engineer
                             </Badge>
                         </div>
