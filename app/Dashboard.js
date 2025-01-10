@@ -5,6 +5,7 @@ import Footer from "./_components/Footer"
 import Header from "./_components/Header"
 import Projects from "./_components/Projects"
 import TechTools from "./_components/TechTools"
+import { FooterTabs } from './_components/FooterTabs'
 
 const fadeInUp = {
   initial: { 
@@ -41,7 +42,7 @@ export default function Dashboard() {
       variants={staggerContainer}
     >
       <Header />
-      <div className="px-10 pt-24 space-y-20">
+      <div className="px-10 pt-24 mb-16 space-y-20">
         <motion.section 
           id="about" 
           variants={fadeInUp}
@@ -56,14 +57,8 @@ export default function Dashboard() {
         >
           <Projects />
         </motion.section>
-       
-        <motion.section 
-          id="contact" 
-          variants={fadeInUp}
-        >
-          <Footer />
-        </motion.section>
       </div>
+      <FooterTabs />
     </motion.main>
   )
 }
