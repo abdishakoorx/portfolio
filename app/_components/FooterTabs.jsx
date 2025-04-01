@@ -21,7 +21,7 @@ const data = [
     {
         title: 'Download CV',
         icon: <FileDown className="w-full h-full text-green-600" />,
-        href: '/ABDISHAKOOR_HASSAN_CV.pdf',
+        href: '/ABDISHAKOOR_HASSAN.pdf',
         download: true,
     },
 ];
@@ -29,8 +29,8 @@ const data = [
 
 export function FooterTabs() {
     return (
-        <div className="fixed max-w-full -translate-x-1/2 bottom-4 left-1/2">
-            <Dock className="items-end gap-6 px-4 py-4 bg-gray-800 rounded-full shadow-lg backdrop-blur-sm">
+        <div className="fixed bottom-4 left-1/2 max-w-full -translate-x-1/2">
+            <Dock className="gap-6 items-end px-4 py-4 bg-gray-800 rounded-full shadow-lg backdrop-blur-sm">
                 {data.map((item, idx) => (
                     <a
                         key={idx}
@@ -39,7 +39,7 @@ export function FooterTabs() {
                         rel={item.href.startsWith('mailto') ? undefined : 'noopener noreferrer'}
                         className="transition-transform duration-200 hover:scale-105"
                     >
-                        <DockItem className="transition-colors bg-white rounded-full shadow-md hover:bg-gray-100 aspect-square">
+                        <DockItem className="bg-white rounded-full shadow-md transition-colors hover:bg-gray-100 aspect-square">
                             <DockLabel className="font-mono text-sm text-gray-800">{item.title}</DockLabel>
                             <DockIcon className="text-gray-600">{item.icon}</DockIcon>
                         </DockItem>
