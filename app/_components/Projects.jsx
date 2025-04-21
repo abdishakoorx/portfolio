@@ -12,14 +12,6 @@ import Link from 'next/link'
 
 const projects = [
   {
-    title: "Doctor Appointment System",
-    description: "A web app for managing doctor appointments, with a seamless user experience.",
-    technologies: ["NextJs", "Hygraph CMS", "TailwindCSS", "GraphQL", "Kinde"],
-    githubUrl: "https://github.com/abdishakoorx/doctor_appoinment",
-    liveUrl: "https://doctorwhere.vercel.app/",
-    imageUrl: "/doctorwhere.webp"
-  },
-  {
     title: "AI Travel Planner",
     description: "A web app with AI that generates smart recommendations for trips.",
     technologies: ["Vite", "JavaScript", "Gemini AI", "Tailwind CSS"],
@@ -28,20 +20,28 @@ const projects = [
     imageUrl: "/greatertrips.webp"
   },
   {
+    title: "AI Video Creator",
+    description: "AI-powered platform for creating professional YouTube shorts with ease.",
+    technologies: ["NextJs", "TypeScript", "NeonPg", "TailwindCSS", "Clerk"],
+    githubUrl: "https://github.com/abdishakoorx/meeedia",
+    liveUrl: "https://meeeedia.vercel.app/",
+    imageUrl: "/meeedia.webp"
+  },
+  {
+    title: "Doctor Appointment System",
+    description: "A web app for managing doctor appointments, with a seamless user experience.",
+    technologies: ["NextJs", "Hygraph CMS", "TailwindCSS", "GraphQL", "Kinde"],
+    githubUrl: "https://github.com/abdishakoorx/doctor_appoinment",
+    liveUrl: "https://doctorwhere.vercel.app/",
+    imageUrl: "/doctorwhere.webp"
+  },
+  {
     title: "Property Management System",
     description: "A full-stack property management solution for landlords and agents.",
     technologies: ["React", "Node.js", "NextJs", "Supabase", "Clerk"],
     githubUrl: "https://github.com/abdishakoorx/primestate",
     liveUrl: "https://primestate-eta.vercel.app/",
     imageUrl: "/primestate.webp"
-  },
-  {
-    title: "Video Creator",
-    description: "AI-powered platform for creating professional videos with ease.",
-    technologies: ["NextJs", "TypeScript", "NeonPg", "TailwindCSS", "Clerk"],
-    githubUrl: "https://github.com/abdishakoorx/meeedia",
-    liveUrl: "https://meeeedia.vercel.app/",
-    imageUrl: "/meeedia.webp"
   },
 ]
 
@@ -79,13 +79,13 @@ const ProjectCard = ({ project, index }) => {
         <CardFooter className="flex justify-between">
           <Button size="sm" asChild className='text-gray-800 bg-transparent border-2 border-gray-700 hover:bg-accent'>
             <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-              <GitHubLogoIcon className="w-4 h-4 mr-2" />
+              <GitHubLogoIcon className="mr-2 w-4 h-4" />
               GitHub
             </Link>
           </Button>
           <Button size="sm" asChild className='bg-gray-900 hover:bg-gray-700'>
             <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-              <ExternalLink className="w-4 h-4 mr-2" />
+              <ExternalLink className="mr-2 w-4 h-4" />
               Live Demo
             </Link>
           </Button>
