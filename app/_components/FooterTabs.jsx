@@ -21,7 +21,7 @@ const data = [
     {
         title: 'Download CV',
         icon: <FileDown className="w-full h-full text-green-600" />,
-        href: '/ABDISHAKOOR_HASSAN.pdf',
+        href: '/ABDISHAKOOR-HASSAN-CV-2025.pdf',
         download: true,
     },
 ];
