@@ -8,7 +8,7 @@ function Header() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const sections = ['about', 'projects'];
+            const sections = ['about','experience', 'projects'];
             const scrollPosition = window.scrollY;
 
             sections.forEach(section => {
@@ -34,9 +34,9 @@ function Header() {
     };
 
     return (
-        <header className='fixed top-0 left-0 right-0 z-50 px-16 backdrop-blur-md'>
-            <div className='flex items-center justify-between mt-4 mb-2'>
-                <div className='flex items-center gap-12'>
+        <header className='fixed top-0 right-0 left-0 z-50 px-16 backdrop-blur-md'>
+            <div className='flex justify-between items-center mt-4 mb-2'>
+                <div className='flex gap-12 items-center'>
                     <Image
                         src="/me.jpg"
                         width={400}
@@ -51,8 +51,8 @@ function Header() {
                     </div>
                 </div>
                 <nav>
-                    <ul className='items-center hidden gap-8 md:flex'>
-                        {['about', 'projects'].map((section) => (
+                    <ul className='hidden gap-8 items-center md:flex'>
+                        {['about','experience', 'projects'].map((section) => (
                             <li key={section}>
                                 <button
                                     onClick={() => scrollToSection(section)}
