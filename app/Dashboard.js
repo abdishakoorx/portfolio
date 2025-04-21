@@ -5,7 +5,7 @@ import Header from "./_components/Header"
 import Projects from "./_components/Projects"
 import TechTools from "./_components/TechTools"
 import { FooterTabs } from './_components/FooterTabs'
-import WorkExperience from './_components/WorkExperince'
+import WorkExperience from './_components/WorkExperience'
 
 const fadeInUp = {
   initial: {
