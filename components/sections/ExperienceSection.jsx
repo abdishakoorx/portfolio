@@ -1,7 +1,6 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
-
 export default function ExperienceSection() {
     const experience = [
         {
@@ -56,45 +55,56 @@ export default function ExperienceSection() {
 
     return (
         <section id="experience" className="px-6 py-20">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-5xl mx-auto">
                 <div className="mb-16 text-center">
                     <h2 className="mb-4 text-4xl font-bold">Experience</h2>
                     <div className="w-20 h-1 mx-auto bg-blue-400"></div>
                 </div>
 
-                <div className="space-y-8">
-                    {experience.map((job, index) => (
-                        <Card key={index} className="transition-colors bg-gray-800 border-gray-700 hover:border-blue-400">
-                            <CardContent className="p-8">
-                                <div>
-                                    <h3 className="mb-2 text-xl font-bold text-white">{job.role}</h3>
-                                    <div className="mb-1 font-medium text-blue-400">{job.company}</div>
-                                    <div className="flex items-center space-x-4 text-sm text-gray-400">
-                                        <span>{job.period}</span>
-                                        <span>•</span>
-                                        <span>{job.city}</span>
-                                    </div>
-                                </div>
-                                <ul className="space-y-2 mt-3">
-                                    {job.descriptions.map((description, i) => (
-                                        <li key={i} className="flex items-start text-gray-300">
-                                            <span className="mr-3 text-blue-400">•</span>
-                                            {description}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </CardContent>
-                            <CardFooter>
-                                <div className="flex flex-wrap gap-2 mt-4 md:mt-0">
-                                    {job.skills.map((skill) => (
-                                        <Badge key={skill} variant="secondary" className="text-gray-300 bg-gray-700">
-                                            {skill}
-                                        </Badge>
-                                    ))}
-                                </div>
-                            </CardFooter>
-                        </Card>
-                    ))}
+                <div className="relative">
+                    {/* Timeline Line with Glow */}
+                    <div className="absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-blue-400 via-blue-400 to-blue-400/20 hidden md:block shadow-[0_0_10px_2px_rgba(59,130,246,0.3)]" />
+
+                    <div className="space-y-8">
+                        {experience.map((job, index) => (
+                            <div key={index} className="relative">
+                                {/* Timeline Dot with Glow */}
+                                <div className="absolute left-6 w-4 h-4 bg-blue-400 rounded-full border-4 border-gray-900 hidden md:block shadow-[0_0_15px_3px_rgba(59,130,246,0.4)]" />
+
+                                {/* Experience Card */}
+                                <Card className="ml-0 md:ml-20 transition-colors bg-gray-800 border-gray-700 hover:border-blue-400">
+                                    <CardContent className="p-8">
+                                        <div>
+                                            <h3 className="mb-2 text-xl font-bold text-white">{job.title}</h3>
+                                            <div className="mb-1 font-medium text-blue-400">{job.company}</div>
+                                            <div className="flex items-center space-x-4 text-sm text-gray-400">
+                                                <span>{job.period}</span>
+                                                <span>•</span>
+                                                <span>{job.city}</span>
+                                            </div>
+                                        </div>
+                                        <ul className="space-y-2 mt-3">
+                                            {job.descriptions.map((description, i) => (
+                                                <li key={i} className="flex items-start text-gray-300">
+                                                    <span className="mr-3 text-blue-400">•</span>
+                                                    {description}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </CardContent>
+                                    <CardFooter>
+                                        <div className="flex flex-wrap gap-2 mt-4 md:mt-0">
+                                            {job.skills.map((skill) => (
+                                                <Badge key={skill} variant="secondary" className="text-gray-300 bg-gray-700">
+                                                    {skill}
+                                                </Badge>
+                                            ))}
+                                        </div>
+                                    </CardFooter>
+                                </Card>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
