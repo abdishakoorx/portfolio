@@ -6,14 +6,14 @@ import Link from "next/link"
 
 export default function HeroSection() {
     return (
-        <section className="px-6 pt-32 pb-20">
+        <section className="px-6 pt-32 pb-20 dark:bg-background">
             <div className="max-w-6xl mx-auto">
                 <div className="grid items-center gap-12 lg:grid-cols-2">
                     <div className="space-y-8">
                         <div className="space-y-4">
-                            <div className="font-medium text-blue-400">Hello, I&apos;m</div>
-                            <h1 className="text-5xl font-bold leading-tight lg:text-7xl">Alex Chen</h1>
-                            <h2 className="text-2xl font-light text-gray-300 lg:text-3xl">Senior Full-Stack Engineer</h2>
+                            <div className="font-medium text-blue-400">Hello, I am</div>
+                            <h1 className="text-5xl font-bold leading-tight lg:text-7xl">Abdishakoor Hassan</h1>
+                            <h2 className="text-2xl font-light text-gray-300 lg:text-3xl">Full-Stack Engineer</h2>
                             <p className="max-w-lg text-xl leading-relaxed text-gray-400">
                                 I craft scalable web applications and robust backend systems that power modern businesses. Passionate
                                 about clean code, performance optimization, and creating exceptional user experiences.
@@ -21,26 +21,30 @@ export default function HeroSection() {
                         </div>
 
                         <div className="flex flex-wrap gap-4">
-                            <Button className="px-8 py-3 text-lg text-white bg-blue-600 hover:bg-blue-700">
-                                View My Work
-                                <ArrowRight className="w-5 h-5 ml-2" />
-                            </Button>
-                            <Button
-                                variant="outline"
-                                className="px-8 py-3 text-lg text-gray-300 bg-transparent border-gray-600 hover:bg-gray-800"
-                            >
-                                Get In Touch
-                            </Button>
+                            <Link href="#projects">
+                                <Button className="px-6 py-3 text-lg text-white bg-blue-600 hover:bg-blue-700 cursor-pointer">
+                                    View My Work
+                                    <ArrowRight className="w-5 h-5 ml-2" />
+                                </Button>
+                            </Link>
+                            <Link href="#contact">
+                                <Button
+                                    variant="outline"
+                                    className="px-6 py-3 text-lg text-gray-300 bg-transparent border-gray-600 hover:bg-gray-800 cursor-pointer"
+                                >
+                                    Get In Touch
+                                </Button>
+                            </Link>
                         </div>
 
                         <div className="flex items-center pt-4 space-x-6">
-                            <Link href="#" className="text-gray-400 transition-colors hover:text-blue-400">
+                            <Link href="https://github.com/abdishakoorx" target="_blank" className="text-gray-400 transition-colors hover:text-blue-400">
                                 <GitHubLogoIcon className="w-6 h-6" />
                             </Link>
-                            <Link href="#" className="text-gray-400 transition-colors hover:text-blue-400">
+                            <Link href="https://www.linkedin.com/in/abdishakoorx/" target="_blank" className="text-gray-400 transition-colors hover:text-blue-400">
                                 <LinkedInLogoIcon className="w-6 h-6" />
                             </Link>
-                            <Link href="#" className="text-gray-400 transition-colors hover:text-blue-400">
+                            <Link href="mailto:abdishakoor145@gmail.com" target="_blank" className="text-gray-400 transition-colors hover:text-blue-400">
                                 <Mail className="w-6 h-6" />
                             </Link>
                         </div>
@@ -48,10 +52,10 @@ export default function HeroSection() {
 
                     <div className="relative">
                         <div className="relative w-full max-w-md mx-auto">
-                            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-2xl blur-2xl opacity-20"></div>
+                            <div className="absolute inset-0 bg-linear-to-r from-blue-600 to-emerald-600 rounded-2xl blur-2xl opacity-20"></div>
                             <Image
                                 src="/abdishakoor.jpg"
-                                alt="Alex Chen"
+                                alt="Abdishakoor Hassan"
                                 width={400}
                                 height={500}
                                 className="relative border border-gray-700 rounded-2xl"
