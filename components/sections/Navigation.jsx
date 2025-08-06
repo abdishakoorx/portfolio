@@ -25,13 +25,15 @@ export default function Navigation() {
                             Contact
                         </Link>
                     </div>
-                    <Button
-                        variant="outline"
-                        className="text-blue-400 bg-transparent border-blue-400 hover:bg-blue-400 hover:text-gray-950"
-                    >
-                        <Download className="w-4 h-4 mr-2" />
-                        Resume
-                    </Button>
+                    <Link href="/ABDISHAKOOR-HASSAN-CV-2025.pdf" target="_blank" download>
+                        <Button
+                            variant="outline"
+                            className="text-blue-400 bg-transparent border-blue-400 hover:bg-blue-400 hover:text-gray-950 cursor-pointer"
+                        >
+                            <Download className="w-4 h-4 mr-2" />
+                            Resume
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </nav>
