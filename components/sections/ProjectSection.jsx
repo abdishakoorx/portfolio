@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Zap, ArrowRight } from "lucide-react"
@@ -11,44 +11,41 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons"
 export default function ProjectsSection() {
     const projects = [
         {
-            title: "Enterprise SaaS Platform",
+            title: "AI Travel Planner",
             description:
-                "Full-stack B2B platform serving 10K+ users with real-time collaboration, advanced analytics, and multi-tenant architecture.",
-            tech: ["Next.js", "TypeScript", "PostgreSQL", "Redis", "AWS"],
-            github: "#",
-            live: "#",
+                "A web app with AI that generates smart recommendations for trips.",
+            tech: ["Vite", "JavaScript", "Gemini AI", "Tailwind CSS"],
+            github: "https://github.com/abdishakoorx/trip_planner",
+            live: "https://greatertrips.vercel.app/",
+            image: "/greatertrips.webp",
             impact: "40% increase in user productivity",
-            image: "/placeholder.svg?height=300&width=500",
         },
         {
-            title: "AI-Powered Analytics Dashboard",
-            description:
-                "Real-time data visualization platform with ML-driven insights, processing 1M+ events daily with sub-second latency.",
-            tech: ["React", "Python", "FastAPI", "TensorFlow", "Docker"],
-            github: "#",
-            live: "#",
+            title: "AI Video Shorts Creator",
+            description: "AI-powered platform for creating professional YouTube shorts with ease.",
+            tech: ["NextJs", "TypeScript", "NeonPg", "TailwindCSS", "Clerk"],
+            github: "https://github.com/abdishakoorx/meeedia",
+            live: "https://meeeedia.vercel.app/",
+            image: "/meeedia.webp",
             impact: "60% faster decision making",
-            image: "/placeholder.svg?height=300&width=500",
         },
         {
-            title: "Microservices E-commerce",
-            description:
-                "Scalable e-commerce platform with microservices architecture, handling 100K+ transactions with 99.9% uptime.",
-            tech: ["Node.js", "MongoDB", "Kubernetes", "GraphQL", "Stripe"],
-            github: "#",
-            live: "#",
+            title: "Doctor Appointment System",
+            description: "A web app for managing doctor appointments, with a seamless user experience.",
+            tech: ["NextJs", "Hygraph CMS", "TailwindCSS", "GraphQL", "Kinde"],
+            github: "https://github.com/abdishakoorx/doctor_appoinment",
+            live: "https://doctorwhere.vercel.app/",
+            image: "/doctorwhere.webp",
             impact: "300% revenue growth",
-            image: "/placeholder.svg?height=300&width=500",
         },
         {
-            title: "Real-time Collaboration Tool",
-            description:
-                "WebRTC-based collaboration platform with live editing, video calls, and seamless file sharing for remote teams.",
-            tech: ["Vue.js", "WebRTC", "Socket.io", "Express.js", "AWS"],
-            github: "#",
-            live: "#",
+            title: "Property Management System",
+            description: "A full-stack property management solution for landlords and agents.",
+            tech: ["React", "Node.js", "NextJs", "Supabase", "Clerk"],
+            github: "https://github.com/abdishakoorx/primestate",
+            live: "https://primestate-eta.vercel.app/",
+            image: "/primestate.webp",
             impact: "50% reduction in meeting time",
-            image: "/placeholder.svg?height=300&width=500",
         },
     ]
 
@@ -78,21 +75,13 @@ export default function ProjectsSection() {
                                     height={300}
                                     className="object-cover w-full h-48 transition-transform duration-300 group-hover:scale-105"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
+                                <div className="absolute inset-0 bg-linear-to-t from-gray-900 to-transparent opacity-20"></div>
                             </div>
                             <CardContent className="p-6">
                                 <div className="flex items-start justify-between mb-4">
                                     <h3 className="text-xl font-bold text-white transition-colors group-hover:text-blue-400">
                                         {project.title}
                                     </h3>
-                                    <div className="flex space-x-2">
-                                        <Link href={project.github} className="text-gray-400 transition-colors hover:text-blue-400">
-                                            <GitHubLogoIcon className="w-5 h-5" />
-                                        </Link>
-                                        <Link href={project.live} className="text-gray-400 transition-colors hover:text-blue-400">
-                                            <ExternalLink className="w-5 h-5" />
-                                        </Link>
-                                    </div>
                                 </div>
                                 <p className="mb-4 leading-relaxed text-gray-300">{project.description}</p>
                                 <div className="flex items-center justify-between">
@@ -114,17 +103,34 @@ export default function ProjectsSection() {
                                     </div>
                                 </div>
                             </CardContent>
+                            <CardFooter className="flex justify-between">
+                                <Button asChild variant="ghost" className="bg-gray-100">
+                                    <Link href={project.github} className="text-gray-900 transition-colors hover:text-blue-400" target="_blank" rel="noopener noreferrer">
+                                        <GitHubLogoIcon className="w-5 h-5" />
+                                        Github
+                                    </Link>
+                                </Button>
+                                <Button asChild variant="outline" className="border-gray-100">
+                                    <Link href={project.live} className="text-gray-100 bg-transparent transition-colors hover:text-blue-400" target="_blank" rel="noopener noreferrer">
+                                        <ExternalLink className="w-5 h-5" />
+                                        Live Demo
+                                    </Link>
+                                </Button>
+                            </CardFooter>
                         </Card>
                     ))}
                 </div>
 
                 <div className="mt-12 text-center">
                     <Button
+                        asChild
                         variant="outline"
                         className="text-blue-400 bg-transparent border-blue-400 hover:bg-blue-400 hover:text-gray-950"
                     >
-                        View All Projects
-                        <ArrowRight className="w-4 h-4 ml-2" />
+                        <Link href="https://github.com/abdishakoorx" target="_blank" rel="noopener noreferrer">
+                            <span>View All Projects</span>
+                            <ArrowRight className="w-4 h-4 ml-2" />
+                        </Link>
                     </Button>
                 </div>
             </div>
