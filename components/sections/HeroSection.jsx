@@ -13,7 +13,7 @@ export default function HeroSection() {
                         <div className="space-y-4">
                             <div className="font-medium text-blue-400">Hello, I am</div>
                             <h1 className="text-5xl font-bold leading-tight lg:text-7xl">Abdishakoor Hassan</h1>
-                            <h2 className="text-2xl font-light text-gray-300 lg:text-3xl">Full-Stack Engineer</h2>
+                            <h2 className="text-2xl font-semibold text-gray-300 lg:text-3xl">Full-Stack Engineer</h2>
                             <p className="max-w-lg text-xl leading-relaxed text-gray-400">
                                 I craft scalable web applications and robust backend systems that power modern businesses. Passionate
                                 about clean code, performance optimization, and creating exceptional user experiences.

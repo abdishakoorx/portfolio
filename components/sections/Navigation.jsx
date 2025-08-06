@@ -5,7 +5,7 @@ import Link from "next/link"
 export default function Navigation() {
     return (
         <nav className="fixed top-0 z-50 w-full border-b border-gray-800 bg-gray-950/80 backdrop-blur-md">
-            <div className="max-w-6xl px-6 py-4 mx-auto">
+            <div className="px-6 md:px-20 py-4">
                 <div className="flex items-center justify-between">
                     <div className="text-xl font-bold text-blue-400">{"<Abdishakoor />"}</div>
                     <div className="items-center hidden space-x-8 md:flex">
