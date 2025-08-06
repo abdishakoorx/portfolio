@@ -18,7 +18,7 @@ export default function ProjectsSection() {
             github: "https://github.com/abdishakoorx/trip_planner",
             live: "https://greatertrips.vercel.app/",
             image: "/greatertrips.webp",
-            impact: "40% increase in user productivity",
+            impact: "Reduces planning time by 70%",
         },
         {
             title: "AI Video Shorts Creator",
@@ -27,16 +27,16 @@ export default function ProjectsSection() {
             github: "https://github.com/abdishakoorx/meeedia",
             live: "https://meeeedia.vercel.app/",
             image: "/meeedia.webp",
-            impact: "60% faster decision making",
+            impact: "Creates videos in under 2 minutes",
         },
         {
             title: "Doctor Appointment System",
-            description: "A web app for managing doctor appointments, with a seamless user experience.",
+            description: "A web app for managing doctor appointments and patient records.",
             tech: ["NextJs", "Hygraph CMS", "TailwindCSS", "GraphQL", "Kinde"],
             github: "https://github.com/abdishakoorx/doctor_appoinment",
             live: "https://doctorwhere.vercel.app/",
             image: "/doctorwhere.webp",
-            impact: "300% revenue growth",
+            impact: "24/7 appointment availability",
         },
         {
             title: "Property Management System",
@@ -45,13 +45,13 @@ export default function ProjectsSection() {
             github: "https://github.com/abdishakoorx/primestate",
             live: "https://primestate-eta.vercel.app/",
             image: "/primestate.webp",
-            impact: "50% reduction in meeting time",
+            impact: "Cuts admin tasks by 60%",
         },
     ]
 
     return (
         <section id="projects" className="px-6 py-20 bg-gray-900/50">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-7xl mx-auto">
                 <div className="mb-16 text-center">
                     <h2 className="mb-4 text-4xl font-bold">Featured Projects</h2>
                     <div className="w-20 h-1 mx-auto mb-6 bg-blue-400"></div>
@@ -61,7 +61,7 @@ export default function ProjectsSection() {
                     </p>
                 </div>
 
-                <div className="grid gap-8 md:grid-cols-2">
+                <div className="grid gap-8 grid-cols-1 lg:grid-cols-2">
                     {projects.map((project, index) => (
                         <Card
                             key={index}
@@ -72,8 +72,8 @@ export default function ProjectsSection() {
                                     src={project.image || "/placeholder.svg"}
                                     alt={project.title}
                                     width={500}
-                                    height={300}
-                                    className="object-cover w-full h-48 transition-transform duration-300 group-hover:scale-105"
+                                    height={500}
+                                    className="object-cover w-full h-72 transition-transform duration-300 group-hover:scale-105"
                                 />
                                 <div className="absolute inset-0 bg-linear-to-t from-gray-900 to-transparent opacity-20"></div>
                             </div>
@@ -128,8 +128,8 @@ export default function ProjectsSection() {
                         className="text-blue-400 bg-transparent border-blue-400 hover:bg-blue-400 hover:text-gray-950"
                     >
                         <Link href="https://github.com/abdishakoorx" target="_blank" rel="noopener noreferrer">
+                            <GitHubLogoIcon className="w-4 h-4 ml-2" />
                             <span>View All Projects</span>
-                            <ArrowRight className="w-4 h-4 ml-2" />
                         </Link>
                     </Button>
                 </div>

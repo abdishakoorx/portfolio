@@ -18,9 +18,6 @@ export default function Navigation() {
                         <Link href="#projects" className="text-gray-300 transition-colors hover:text-blue-400">
                             Projects
                         </Link>
-                        <Link href="#skills" className="text-gray-300 transition-colors hover:text-blue-400">
-                            Skills
-                        </Link>
                         <Link href="#contact" className="text-gray-300 transition-colors hover:text-blue-400">
                             Contact
                         </Link>
