@@ -5,25 +5,25 @@ export default function AboutSection() {
     const stats = [
         {
             icon: Code2,
-            value: "50+",
+            value: "5+",
             label: "Projects Completed",
             color: "text-blue-400",
         },
         {
             icon: Users,
-            value: "100K+",
-            label: "Users Impacted",
+            value: "120+",
+            label: "Students Taught",
             color: "text-emerald-400",
         },
         {
             icon: TrendingUp,
-            value: "6+",
+            value: "3+",
             label: "Years Experience",
             color: "text-amber-400",
         },
         {
             icon: Award,
-            value: "15+",
+            value: "10+",
             label: "Technologies",
             color: "text-purple-400",
         },
@@ -40,19 +40,19 @@ export default function AboutSection() {
                 <div className="grid items-center gap-12 md:grid-cols-2">
                     <div className="space-y-6">
                         <p className="text-lg leading-relaxed text-gray-300">
-                            With over 6 years of experience in full-stack development, I specialize in building scalable web
-                            applications that solve real-world problems. My journey began with a Computer Science degree and has
-                            evolved through working with startups and enterprise companies.
+                            As a Full-Stack Developer I bring a unique combination of technical expertise and teaching
+                            experience to every project. With a Computer Science degree from Kenyatta University and
+                            hands-on experience at M-Treat, I focus on building responsive web applications
+                            and AI-powered solutions that deliver real business value.
                         </p>
                         <p className="text-lg leading-relaxed text-gray-300">
-                            I&apos;m passionate about writing clean, maintainable code and staying current with emerging technologies. When
-                            I&apos;m not coding, you&apos;ll find me contributing to open-source projects, mentoring junior developers, or
-                            exploring the latest in AI and machine learning.
+                            My passion extends beyond coding - I&apos;ve taught web development and design to students, mentored
+                            aspiring developers, and contributed to UX enhancements based on user feedback.
                         </p>
                         <div className="flex flex-wrap gap-4 pt-4">
                             <div className="flex items-center space-x-2 text-gray-400">
                                 <MapPin className="w-4 h-4" />
-                                <span>San Francisco, CA</span>
+                                <span>Nairobi, Kenya</span>
                             </div>
                             <div className="flex items-center space-x-2 text-gray-400">
                                 <Calendar className="w-4 h-4" />
